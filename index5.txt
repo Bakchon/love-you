@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บอกรักแฟน 💖</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffccff, #dda0dd);
+            font-family: 'Itim', cursive;
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+        .message {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #ff66b2;
+            background-color: rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 15px;
+            animation: blink 1s infinite;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes blink {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+        .heart {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 5rem;
+            color: #ff6699;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: translateX(-50%) scale(1); opacity: 1; }
+            50% { transform: translateX(-50%) scale(1.2); opacity: 0.8; }
+            100% { transform: translateX(-50%) scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">💖</div>
+    <div class="message">เค้ารักเธอมากนะ ไอเด่กขี้มึนเด่กขี้ดือ 7เดือนละอยู่ให้นานๆให้เขาพากันแซวทั่วเมืองเลยดีมั้ยนะ565656 💖</div>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector('.message').style.animation = 'none';
+            document.querySelector('.message').style.opacity = '1';
+        }, 3000); // 
+    </script>
+</body>
+</html>
